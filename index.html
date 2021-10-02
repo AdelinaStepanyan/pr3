@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tools">
+        <h1 style="color:yellowgreen">Events</h1>
+        <ul>
+            <li>
+                <button onclick="kill()">Kill them all</button>
+            </li>
+            <li>
+                <button onclick="addGrass()">Add grass</button>
+            </li>
+            <li>
+                <button onclick="addGrassEater()">Add grass eater</button>
+            </li>
+            <li>
+                <button onclick="addGishatich()">Add gishatich</button>
+            </li>
+            <li>
+                <button onclick="addGishatichx()">Add gishatichx</button>
+            </li>
+            <li>
+                <button onclick="addPurple()">Add purple</button>
+            </li>
+        </ul>
+    </div>
+
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Ադելինա Ստեփանյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է N ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը,</td>
+                <td id="grassCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Դեղինը խոտակերն է, որը բազմանում է N հատ խոտ ուտելուց հետո և մահանում է N հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը:</td>
+                <td id="grassEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Կապույտը գիշատիչն է, որը բազմանում է N հատ խոտակեր ուտելուց հետո և մահանում է N հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչիքսը, կամ երբ նրան այրում է կրակը:</td>
+                <td id="gishatichCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչիքսն է, որը բազմանում է N հատ խոտակեր կամ գիշատիչ ուտելուց հետո և մահանում է N հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է մանուշակը:</td>
+                <td id="gishatichxCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:purple;"></td>
+                <td>Մանուշակագույնը մանուշակն է, որը բազմանում է N հատ խոտակեր կամ գիշատիչ կամ գիշատիչիքս ուտելուց հետո և մահանում է N հատ չուտելուց հետո:</td>
+                <td id="purpleCount"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
